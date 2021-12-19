@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>DeoVR Example</title>
+    <link rel="stylesheet" type="text/css" href="https://s3.deovr.com/version/1/css/styles.css"/>
+    <script src="https://s3.deovr.com/version/1/js/bundle.js" async></script>
+</head>
+<body>
+<deo-video id="myvideo">
+</deo-video>
+<script>
+    const src = prompt("Give source")
+    const myvideo = document.querySelector('#myvideo')
+
+    const source = document.createElement('source');
+
+    source.src = src;
+
+    myvideo.appendChild(source);
+</script>
+</body>
+</html>
